@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 Holiday Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Public Holiday Checker</h1>
+    <div class="country">
+        <label for="country"> Country</label>
+        <select id="country">
+            <option value="US">United States</option>
+            <option value="GB">United Kingdom</option>
+            <option value="DE">Germany</option>
+            <option value="FR">France</option>
+        </select>
+    </div>
+    <div class="date">
+        <label for="date">Select Year</label>
+        <input type="number" value="2025" min="2000" max="2100" id="year">
+    </div>
+    <button id="checkBtn"> Check Holidays</button>
+
+    <ul id="holidayList"></ul>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

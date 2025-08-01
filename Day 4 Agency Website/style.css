@@ -1,0 +1,145 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:   sans-serif;
+    background-color: #000;
+    color: #fff;
+    user-select: none;
+}
+header{
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #55E6A5;
+    padding: 20px;
+}
+.nav-container ul{
+    list-style: none;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.nav-container ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.nav-container ul li a:hover{
+    color: #55E6A5;
+    transition: ease-in-out 800ms;
+}
+.search{
+    background-color: #55E6A5;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 768px){
+    .nav-container ul{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    } 
+}
+@media screen and (min-width: 768px){
+    .menu{
+        display: none;
+    }
+}
+.hero-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 80px 20px 0 20px;
+}
+.hero-content div{
+    font-weight: 700;
+    z-index: 1;
+}
+#hero-right img{
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0rem 0rem 6rem #55e6a5);
+}
+.trans-text-bg{
+    padding-top: 5%;
+    font-size: 9em;
+}
+.trans-text{
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+}
+@media screen and (max-width: 768px){
+    .hero-content{
+     width: 100%;
+    }
+    .hero-content div{
+        font-size: .6em;
+    }
+    #hero-right img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+.img-main img{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    
+}
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4.5rem;
+    z-index: 0;
+}
+
+.section-2 img {
+    width: calc(100% - 6%);
+    height: 100%;
+}
+
+.section-2 .social {
+    display: flex;
+    place-content: center;
+    writing-mode: vertical-rl;
+    margin-right: 2rem;
+}
+
+.social a {
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem 0;
+}
+@media screen and (max-width: 768px){
+    .section-2{
+        flex-direction: column;
+    }
+    .section-2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .section-2 .social{
+        display: none;
+    }
+    
+}

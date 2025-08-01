@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    width: 100%;
+    max-width: 1200px;
+    height: 95%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-players,
+.bottom-players {
+    font: .6em sans-serif;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.sq-1,
+.sq-2,
+.sq-3,
+.sq-4 {
+    width: 40px;
+    height: 40px;
+    font-size: .8em;
+    background-color: #424242;
+    border-radius: 10px;
+}
+
+.player-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.player-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.inner p {
+    margin: 5px 0;
+}
+
+.ludo-board {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.first-flex,
+.second-flex,
+.third-flex {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.second-flex {
+    height: 20%;
+}
+
+.blue,
+.yellow,
+.green,
+.red {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #dbdbdb;
+}
+
+.blue {
+    background-color: #3b5998;
+    border-radius: 10px 0 0 0;
+}
+
+.yellow {
+    background-color: #f7c600;
+    border-radius: 0 10px 0 0;
+}
+
+.green {
+    background-color: #4caf50;
+    border-radius: 0 0 10px 0;
+}
+
+.red {
+    background-color: #f44336;
+    border-radius: 0 0 0 10px;
+}
+
+.inner-blue,
+.inner-yellow,
+.inner-green,
+.inner-red {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.inner-blue {
+    background-color: #1a237e;
+}
+
+.inner-yellow {
+    background-color: #c7a600;
+}
+
+.inner-green {
+    background-color: #2e7d32;
+}
+
+.inner-red {
+    background-color: #b71c1c;
+}
+
+.yellow-blocks,
+.blue-blocks,
+.green-blocks,
+.red-blocks {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #bbbbbb;
+}
+
+.blue-blocks,
+.green-blocks {
+    width: 40%;
+}
+
+.center-blocks {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #a0a0a0;
+    position: relative;
+}
+
+.upper, .lower{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.center-red, .center-green , .center-blue, .center-yellow{
+    width: 50%;
+    height: 100%;
+   
+}
+.center-red {
+    background-color: #f44336;
+}
+.center-green {
+    background-color: #4caf50;
+}
+.center-blue {
+    background-color: #3b5998;
+}
+.center-yellow {
+    background-color: #f7c600;
+}
+.inner-center {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.yellow-blocks, .blue-blocks, .green-blocks, .red-blocks {
+    background-image:
+    linear-gradient(#000000 1px, transparent 1px),
+    linear-gradient(90deg, #000000 1px, transparent 1px);
+    background-size: 50px 30px;
+}

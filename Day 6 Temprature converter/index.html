@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 Temprature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Temprature Converter</h1>
+        <form action="">
+            <div class="celsius">
+                <span>Celsius</span>
+                <input type="number" onchange="computeTemp(event)" name="celsius" id="celsius">
+            </div>
+            <div class="fahrenheit">
+                <span>Fahrenheit</span>
+                <input type="number" onchange="computeTemp(event)" name="fahrenheit" id="fahrenheit">
+            </div>
+            <div class="kelvin">
+                <span>Kelvin</span>
+                <input type="number" onchange="computeTemp(event)" name="kelvin" id="kelvin">
+            </div>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

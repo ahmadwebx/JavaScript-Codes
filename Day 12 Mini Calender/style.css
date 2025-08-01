@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6A5ACD;
+}
+.main{
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding-bottom: 30px ;
+    font-size: 1.2em;   
+}
+h1{
+    font-size: 3.2em;
+    color: #FF4500;
+    margin: 20px 0;
+}
+.month{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #FF4500;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+}

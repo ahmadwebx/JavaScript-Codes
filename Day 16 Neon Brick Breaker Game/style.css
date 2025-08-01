@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #09001A;
+    color: #00ffcc;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-game {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 4px solid #00Ffcc;
+    box-shadow: 0 0 15px #00Ffcc, 0 0 30px #00Ffcc inset;
+    border-radius: 10px;
+    width: 650px;
+    height: 550px;
+    padding: 20px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+}
+
+.game-container canvas {
+    background-color: #09001A;
+    border: 2px solid #00FDCA;
+    box-shadow: 0 0 15px #00Ffcc, 0 0 30px #00Ffcc inset;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gameCanvas {
+    display: inline;
+    background-image:
+        linear-gradient(rgba(0, 255, 204, .1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 204, .1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #0fc inset;
+}
+
+.power-up-timer {
+    content: "Power Up Active!";
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    font-size: 10px;
+    color: #fc0 !important;
+    text-shadow: 0 0 5px #0fc;
+    list-style: none;
+}
+
+.messafe-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 20, .9);
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #00Ffcc;
+    box-shadow: 0 0 15px #00Ffcc;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+    z-index: 10;
+}
+
+.message-box button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    background: linear-gradient(145deg, #0fc, #00b38f);
+    color: #00001a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00Ffcc;
+    transition: all 0.2s ease;
+}
+
+.message-box button:hover {
+    box-shadow: 0 0 20px #00Ffcc;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes brick-break {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.brick-breaking {
+    animation: brick-break 0.2s ease-in-out forwards;
+}
+
+@keyframes power-up-fall {
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(50px);
+        opacity: 1;
+    }
+}
+
+.power-up-fallling{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px currentColor;
+    z-index: 5;
+}
